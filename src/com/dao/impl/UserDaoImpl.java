@@ -1,21 +1,20 @@
 package com.dao.impl;
 
-import ajax.util.C3P0Util;
 import com.dao.IUserDao;
 import com.entity.User;
+import com.util.C3P0Util;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Map;
 
 public class UserDaoImpl implements IUserDao {
     QueryRunner queryRunner;
 
     public UserDaoImpl() {
-        queryRunner = new QueryRunner(C3P0Util.getDs());
+        queryRunner = new QueryRunner(C3P0Util.getDataSource());
     }
 
     @Override
