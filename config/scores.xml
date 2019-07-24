@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<scores>
+    <score id="1">
+        <name>王同</name>
+        <lesson>java</lesson>
+        <grade>89</grade>
+    </score>
+    <score id="2">
+        <name>李佳</name>
+        <lesson>sql</lesson>
+        <grade>58</grade>
+    </score>
+</scores>
